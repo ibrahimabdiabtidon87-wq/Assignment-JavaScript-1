@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment JavaScript</title>
+</head>
+
+<body>
+    <script>
+        let Guess = Number(prompt('Enter your guess: '))
+        let attempts = 1;
+        while (Guess != 15) {
+            let Guess = Number(prompt('Enter your guess: '))
+            if (Guess > 15) {
+                console.log('High Number')
+            }else{
+                console.log('Low Number')
+            }
+            if (Guess === 15){
+                alert('Good! you corrected the Number')
+            }
+            attempts++
+            if(attempts == 5){
+                break
+            }
+        }
+    </script>
+</body>
+
+</html>
